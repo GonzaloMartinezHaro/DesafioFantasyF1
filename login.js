@@ -5,8 +5,8 @@ var error = document.getElementById("error");
 var boton = document.getElementById("iniciarSesion");
 
 var datosUsuario = {
-    correo:'asdf@asdf.com',
-    contrasena : "asdf"
+    correo: sessionStorage.getItem('email'),
+    contrasena : sessionStorage.getItem('password')
 }
 
 sessionStorage.setItem("datosUsuario", JSON.stringify(datosUsuario));
