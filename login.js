@@ -4,12 +4,6 @@ var mensajeCorrecto = document.getElementById("mensajeCorrecto");
 var error = document.getElementById("error");
 var boton = document.getElementById("iniciarSesion");
 
-var datosUsuario = {
-    correo:'asdf@asdf.com',
-    contrasena : "asdf"
-}
-
-sessionStorage.setItem("datosUsuario", JSON.stringify(datosUsuario));
 
 
 boton.addEventListener("click", function(){
@@ -53,14 +47,14 @@ function validaciones(correoText){
 function comprobar(correoText,contrasenaText){
 
 
-    var datosUsuarioString = sessionStorage.getItem("datosUsuario");
+    var datosUsuarioString = sessionStorage.getItem("usuarios");
         var datosUsuario = JSON.parse(datosUsuarioString);
         
        
 
-        if(correoText == datosUsuario.correo && contrasenaText == datosUsuario.contrasena){
+        if(correoText == datosUsuario.usuario[0].correo && contrasenaText == datosUsuario.usuario[0].contrasena){
 
-            window.location.href = "inicio.html";
+            window.location.href = "Inicio/inicio.html";
             error.innerHTML = "Correcto";
         }else if(correoText == datosUsuario.correo && contrasenaText != datosUsuario.contrasena){
 
