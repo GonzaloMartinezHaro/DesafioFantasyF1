@@ -96,7 +96,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
 
         usuarios = {
             usuario :   [
-                            {id:1, usuario: newUsername, nombre : newName, apellido: newLastName, contrasena: newPassword, correo: newEmail }
+                            {id:1, usuario: newUsername, nombre : newName, apellido: newLastName, contrasena: newPassword, correo: newEmail, puntos:0 }
                         ],
         }
 

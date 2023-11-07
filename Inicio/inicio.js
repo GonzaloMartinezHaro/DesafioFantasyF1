@@ -1,17 +1,7 @@
 
-if (!localStorage.getItem('primeraVisita')) {
+if (!sessionStorage.getItem('primeraVisita')) {
 
-  
 
-var carreras = {
-    carrera : [
-        {id:1, carrera: 'GP de España', lugar: 'Montmeló', descripcion: 'Increible circuito etc.', foto : '../img/gpEspaña.jpg'},
-        {id:2, carrera: 'GP de Monaco', lugar: 'Montecarlo', descripcion: 'Increible circuito etc.', foto : '../img/gpMonaco.jpg'},
-        {id:3, carrera: 'GP de Austria', lugar: 'Red Bull Ring', descripcion: 'Increible circuito etc.', foto : '../img/austriagp.jpg'},
-        {id:4, carrera: 'GP de GranBretaña', lugar: 'Silverstone', descripcion: 'Increible circuito etc.', foto : '../img/gpGranBretaña.jpg'}
-    ]
-
-}
 
 var grandesPremios = {
 	description : 'Grandes Premios de F1',
@@ -95,17 +85,37 @@ var pilotos = {
     var datosUsuarioString = sessionStorage.getItem("usuarios");
     var datosUsuario = JSON.parse(datosUsuarioString);
 
-    var bot1 =  {id:2, usuario: bot1, nombre : bot1, apellido: bot1, contrasena: null, correo: null }
-    var bot2 =  {id:3, usuario: bot2, nombre : bot2, apellido: bot2, contrasena: null, correo: null }
+    var bot1 =  {id:2, usuario: 'bot1', nombre : 'bot1', apellido: 'bot1', contrasena: null, correo: null, puntos: 0 }
+    var bot2 =  {id:3, usuario: 'bot2', nombre : 'bot2', apellido: 'bot2', contrasena: null, correo: null, puntos: 0 }
 
     datosUsuario.usuario.push(bot1);
     datosUsuario.usuario.push(bot2);
+
+    
+    sessionStorage.setItem("usuarios", JSON.stringify(datosUsuario));
+    
+
+    sessionStorage.setItem('primeraVisita', 'true');                                                 
+ }
+
+
+    var contadorNoticias = 0;
+
+    var carreras = {
+        carrera : [
+            {id:1, carrera: 'GP de España', lugar: 'Montmeló', descripcion: 'Increible circuito etc.', foto : '../img/gpEspaña.jpg'},
+            {id:2, carrera: 'GP de Monaco', lugar: 'Montecarlo', descripcion: 'Increible circuito etc.', foto : '../img/gpMonaco.jpg'},
+            {id:3, carrera: 'GP de Austria', lugar: 'Red Bull Ring', descripcion: 'Increible circuito etc.', foto : '../img/austriagp.jpg'},
+            {id:4, carrera: 'GP de GranBretaña', lugar: 'Silverstone', descripcion: 'Increible circuito etc.', foto : '../img/gpGranBretaña.jpg'}
+        ]
+
+    }
 
     var carreraTxt = document.getElementById('carrera');
     var lugarTxt = document.getElementById('lugar');
     var descripcion = document.getElementById('descripcion');
     var img = document.getElementById('imagen');
-    var contadorNoticias = 0;
+   
     
     var carreraActual = carreras.carrera[contadorNoticias];
     
@@ -124,7 +134,7 @@ var pilotos = {
             return usuario.id !== 0; // Exclude the first user with id 1
         });
         var numPilotosAsignados = 0;
-        while (numPilotosAsignados < 2 && pilotosDisponibles.length > 0 && usuariosDisponibles.length > 0) {
+        while (numPilotosAsignados < 2) {
             var randomPilotoIndex = Math.floor(Math.random() * pilotosDisponibles.length);
             var randomUsuarioIndex = Math.floor(Math.random() * usuariosDisponibles.length);
             var piloto = pilotosDisponibles[randomPilotoIndex];
@@ -142,7 +152,8 @@ var pilotos = {
             pilotosAsignados[1].rol = 'Suplente';
         }
         console.log('Pilotos asignados:', pilotosAsignados);
+        
     }
 
-    localStorage.setItem('primeraVisita', 'true');
-}
+    
+  

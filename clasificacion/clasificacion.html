@@ -8,7 +8,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
+            <li><a href="#">Clasificación</a></li>
             <li><a href="#">Tus Pilotos</a></li>
             <li><a href="#">Pilotos</a></li>
             <li><a href="#">Perfil</a></li>
@@ -16,14 +16,19 @@
         </ul>
     </nav>
     
-    <section>
-        <h2>Noticias</h2>
-        <p id="carrera"></p>
-        <p id="lugar">Lugar: [lugar de la carrera]</p>
-        <p id="descripcion">Descripción: [breve descripción de la carrera]</p>
-        <div id="imagen"></div>
-        </section>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre de Usuario</th>
+                <th>Puntuación Total</th>
+            </tr>
+        </thead>
+        <tbody id="listaUsuarios">
+            <!-- Aquí se mostrarán los datos dinámicos -->
+        </tbody>
+    </table>
     
-    <script src="inicio.js"></script>
+    
+    <script src="clasificaion.js"></script>
 </body>
 </html>
