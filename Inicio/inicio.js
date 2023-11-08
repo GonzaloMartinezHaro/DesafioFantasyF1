@@ -82,25 +82,6 @@ var pilotos = {
     {id:20,nombre:'Yuki',apellidos:'Tsunoda',nacionalidad:'Japon',propiedadJungador: '',rol:'Libre'},
 	]}
 
-    var datosUsuarioString = sessionStorage.getItem("usuarios");
-    var datosUsuario = JSON.parse(datosUsuarioString);
-
-    var bot1 =  {id:2, usuario: 'bot1', nombre : 'bot1', apellido: 'bot1', contrasena: null, correo: null, puntos: 0 }
-    var bot2 =  {id:3, usuario: 'bot2', nombre : 'bot2', apellido: 'bot2', contrasena: null, correo: null, puntos: 0 }
-
-    datosUsuario.usuario.push(bot1);
-    datosUsuario.usuario.push(bot2);
-
-    
-    sessionStorage.setItem("usuarios", JSON.stringify(datosUsuario));
-    
-
-    sessionStorage.setItem('primeraVisita', 'true');                                                 
- }
-
-
-    var contadorNoticias = 0;
-
     var carreras = {
         carrera : [
             {id:1, carrera: 'GP de España', lugar: 'Montmeló', descripcion: 'Increible circuito etc.', foto : '../img/gpEspaña.jpg'},
@@ -111,13 +92,42 @@ var pilotos = {
 
     }
 
+    var datosUsuarioString = sessionStorage.getItem("usuarios");
+    var datosUsuario = JSON.parse(datosUsuarioString);
+
+    var bot1 =  {id:2, usuario: 'bot1', nombre : 'bot1', apellido: 'bot1', contrasena: null, correo: null, puntos: 0 }
+    var bot2 =  {id:3, usuario: 'bot2', nombre : 'bot2', apellido: 'bot2', contrasena: null, correo: null, puntos: 0 }
+
+    datosUsuario.usuario.push(bot1);
+    datosUsuario.usuario.push(bot2);
+
+    sessionStorage.setItem("usuarios", JSON.stringify(datosUsuario));
+
+    sessionStorage.setItem("grandesPremios", JSON.stringify(grandesPremios));
+
+    sessionStorage.setItem("pilotos", JSON.stringify(pilotos));
+
+    sessionStorage.setItem("carreras", JSON.stringify(carreras));
+    
+    sessionStorage.setItem('primeraVisita', 'true');  
+    
+    var contadorNoticias = 0;
+
+    sessionStorage.setItem("contadorNoticias", JSON.stringify(contadorNoticias));
+
+
+ }
+
+    
+    
+
     var carreraTxt = document.getElementById('carrera');
     var lugarTxt = document.getElementById('lugar');
     var descripcion = document.getElementById('descripcion');
     var img = document.getElementById('imagen');
    
     
-    var carreraActual = carreras.carrera[contadorNoticias];
+    var carreraActual = JSON.parse(sessionStorage.getItem("carreras")).carrera[sessionStorage.getItem("contadorNoticias")];
     
     carreraTxt.textContent = carreraActual.carrera;
     lugarTxt.textContent = 'Lugar: ' + carreraActual.lugar;

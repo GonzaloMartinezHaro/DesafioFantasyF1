@@ -1,4 +1,5 @@
 var listaUsuarios = document.getElementById("listaUsuarios");
+var botonLanzar = document.getElementById("lanzarCarrera");
 
 
 function ordenarUsuariosPorPuntos() {
@@ -24,4 +25,24 @@ function ordenarUsuariosPorPuntos() {
     }
 }
 ordenarUsuariosPorPuntos();
+
+
+botonLanzar.addEventListener("click",function(){
+
+    
+
+    if (JSON.parse(sessionStorage.getItem("carreras")).carrera.length > parseInt(sessionStorage.getItem("contadorNoticias"))+1) {
+        
+        var contNoticias = parseInt(sessionStorage.getItem("contadorNoticias"));
+
+        contNoticias++;
+
+        sessionStorage.setItem("contadorNoticias", JSON.stringify(contNoticias));
+    }
+    
+
+
+})
+
+    
 
