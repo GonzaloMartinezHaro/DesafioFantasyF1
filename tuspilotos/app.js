@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var suplenteSelect = document.getElementById("suplenteSelect");
     var asignarTitularBtn = document.getElementById("asignarTitularBtn");
     var asignarSuplenteBtn = document.getElementById("asignarSuplenteBtn");
+    cargarPilotos();
 
     asignarTitularBtn.addEventListener("click", function () {
         var selectedPiloto = parseInt(titularSelect.value);
@@ -63,19 +64,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cargarPilotos(); // Llama a la función para cargar las imágenes iniciales de los pilotos
 
-    function cargarPilotos() {
-        // Recuperar roles desde el sessionStorage
-        var rolTitular = sessionStorage.getItem("rolTitular");
-        var rolSuplente = sessionStorage.getItem("rolSuplente");
+   // Dentro de la función cargarPilotos() después de recuperar los roles desde sessionStorage
+   function cargarPilotos() {
+    // Recuperar roles desde el sessionStorage
+    var rolTitular = sessionStorage.getItem("rolTitular");
+    var rolSuplente = sessionStorage.getItem("rolSuplente");
 
-        if (rolTitular) {
-            fotoPiloto1.src = cargarImagenPiloto(pilotoTitularActual);
-        }
+    // Obtener los elementos select
+    var titularSelect = document.getElementById("titularSelect");
+    var suplenteSelect = document.getElementById("suplenteSelect");
 
-        if (rolSuplente) {
-            fotoPilotoSuplente.src = cargarImagenPiloto(pilotoSuplenteActual);
-        }
+    // Limpiar las opciones actuales
+    titularSelect.innerHTML = "";
+    suplenteSelect.innerHTML = "";
+
+    // Generar las opciones dinámicamente desde los datos de los pilotos
+    pilotos.piloto.forEach(function (piloto) {
+        var option = document.createElement("option");
+        option.value = piloto.id;
+        option.text = piloto.nombre;
+        titularSelect.add(option);
+
+        // Clonar la opción para el select de suplente
+        var suplenteOption = option.cloneNode(true);
+        suplenteSelect.add(suplenteOption);
+    });
+
+    // Cargar las imágenes según los roles o cargar las del primer piloto como titular y segundo como suplente
+    fotoPiloto1.src = rolTitular ? cargarImagenPiloto(rolTitular) : cargarImagenPiloto(pilotoTitularActual);
+    fotoPilotoSuplente.src = rolSuplente ? cargarImagenPiloto(rolSuplente) : cargarImagenPiloto(pilotoSuplenteActual);
+
+    // Seleccionar automáticamente los pilotos en los selectores
+    if (rolTitular) {
+        titularSelect.value = rolTitular;
     }
+
+    if (rolSuplente) {
+        suplenteSelect.value = rolSuplente;
+    }
+}
+
+
+// Asegúrate de llamar a cargarPilotos() en algún lugar, por ejemplo, al final de la función asignarTitularBtn.addEventListener
+
 
     function almacenarRol(rol, pilotoId) {
         sessionStorage.setItem("rol" + rol.charAt(0).toUpperCase() + rol.slice(1), pilotoId);
