@@ -1,13 +1,14 @@
 var listaUsuarios = document.getElementById("listaUsuarios");
 var botonLanzar = document.getElementById("lanzarCarrera");
-var fin = document.getElementById("fin");
+var gp = document.getElementById("gp");
+var cont = sessionStorage.getItem("contadorCarreras");
 
 botonLanzar.addEventListener("click",function(){
 
     var gPremios =JSON.parse(sessionStorage.getItem("grandesPremios"));
     var pilotos = JSON.parse(sessionStorage.getItem("pilotos"));
     var users = JSON.parse(sessionStorage.getItem("usuarios"));
-    var cont = sessionStorage.getItem("contadorCarreras");
+    
 
 
     if(cont <= 4){
@@ -71,9 +72,12 @@ function ordenarUsuariosPorPuntos() {
         fila.appendChild(celdaPuntos);
 
         listaUsuarios.appendChild(fila);
+
+
     }
 }
 ordenarUsuariosPorPuntos();
 
+gp.textContent = 'Total de Grandes Premios disputados: ' +  cont;
     
 
