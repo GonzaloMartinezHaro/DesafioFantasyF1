@@ -73,6 +73,19 @@ document.getElementById('confirmPassword').addEventListener('input', function ()
     }
 });
 
+    document.getElementById('newEmail').addEventListener('input', function () {
+    const email = document.getElementById('newEmail').value;
+    const newEmail = this.value;
+    const validationMessage = document.getElementById('emailValidationMessage');
+    if (/^[A-Za-z0-9_]+@[A-Za-z]+\.[A-Za-z]{3,4}$/.test(email)) {
+        validationMessage.textContent = 'Email valido';
+        validationMessage.style.color = 'green';
+    } else {
+        validationMessage.textContent = 'Email no valido';
+        validationMessage.style.color = 'gray';
+    }
+});
+
 // Maneja el envío del formulario de registro
 document.getElementById('registerForm').addEventListener('submit', function (e) {
     e.preventDefault();
