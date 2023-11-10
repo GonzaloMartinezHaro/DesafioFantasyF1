@@ -3,34 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Clasificación</title>
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <style>
+        body {
+            margin: 2em; /* Añadí un pequeño margen al cuerpo para mejorar la apariencia */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        #lanzarCarrera {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Clasificación</a></li>
-            <li><a href="#">Tus Pilotos</a></li>
-            <li><a href="#">Pilotos</a></li>
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#">Administración</a></li>
-        </ul>
-    </nav>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Nombre de Usuario</th>
-                <th>Puntuación Total</th>
-            </tr>
-        </thead>
-        <tbody id="listaUsuarios">
-            <!-- Aquí se mostrarán los datos dinámicos -->
-        </tbody>
-    </table>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Clasificación</a></li>
+                <li><a href="#">Tus Pilotos</a></li>
+                <li><a href="#">Pilotos</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Administración</a></li>
+            </ul>
+        </nav>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre de Usuario</th>
+                    <th>Puntuación Total</th>
+                </tr>
+            </thead>
+            <tbody id="listaUsuarios">
+                <!-- Aquí se mostrarán los datos dinámicos -->
+            </tbody>
+        </table>
 
-    <button type="button" id ="lanzarCarrera">Lanzar Carrera</button>
+        <button class="button-primary" type="button" id="lanzarCarrera">Lanzar Carrera</button>
+    </div>
     
-    
-    <script src="clasificaion.js"></script>
+    <script src="clasificacion.js"></script>
 </body>
 </html>
