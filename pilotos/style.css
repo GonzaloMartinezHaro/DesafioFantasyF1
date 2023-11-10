@@ -133,6 +133,27 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px; /* Bordes redondeados */
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: goldenrod;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+td{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px; /* Ajusta este valor según tus necesidades */
+    font-weight: bold;
+    color: white;
+}
+
+
 
 @media (max-width: 768px) {
     .column {

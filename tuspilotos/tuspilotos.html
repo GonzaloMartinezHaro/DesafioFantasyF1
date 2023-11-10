@@ -2,49 +2,68 @@
 <html>
 <head>
     <title>Mis Pilotos</title>
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav>
-        <ul>
-            <li><a href="../Inicio/inicio.html"">Inicio</a></li>
-            <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
-            <li><a href="../tuspilotos/tuspilotos.html">Tus Pilotos</a></li>
-            <li><a href="../pilotos/pilotos.html">Pilotos</a></li>
-            <li><a href="../perfil/perfil.html">Perfil</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <div class="row">
     
-    <h1>Mis Pilotos</h1>
-
-    <div id="piloto1">
+          <nav>
+            <ul>
+                <li><a href="../Inicio/inicio.html"">Inicio</a></li>
+                <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
+                <li><a href="../tuspilotos/tuspilotos.html">Tus Pilotos</a></li>
+                <li><a href="../pilotos/pilotos.html">Pilotos</a></li>
+                <li><a href="../perfil/perfil.html">Perfil</a></li>
+                <li><a href="#">Administración</a></li>
+            </ul>
+        </nav>
+    
+        </div>
+    
+        <div class="row">
+            <div class="caja">
+                <h1>Mis Pilotos</h1>
+            <div>
+                <div id="piloto1">
+                
+                    <div id="fotoPiloto1"></div>
+                    <p id="nombre1"></p>
+                    <p>rol: Titular</p>
+                    
+            
+                </div>
+            
+                <div id="piloto2">
+            
+                    <div id="fotoPiloto2"></div>
+                    <p id="nombre2"></p>
+                    <p>rol: Suplente</p>
+                </div>
+            </div>
+            
+            
+            
         
-        <div id="fotoPiloto1"></div>
-        <p id="nombre1"></p>
-        <p>rol: Titular</p>
+            <div>
+                <h3>Seleccionar Titular</h3>
+                <select id="titularSeleccion">
+                    <option id="opcion1"></option>
+                    <option id="opcion2"></option>
+                </select>
+                <button id="asignarTitularBtn">Asignar Titular</button>
+            </div>
         
-
-    </div>
-
-    <div id="piloto2">
-
-        <div id="fotoPiloto2"></div>
-        <p id="nombre2"></p>
-        <p>rol: Suplente</p>
-    </div>
+            <div id="mensaje"></div>
+            </div>
+    
+        </div>
+    
+      </div>
     
     
-
-    <div>
-        <h3>Seleccionar Titular</h3>
-        <select id="titularSeleccion">
-            <option id="opcion1"></option>
-            <option id="opcion2"></option>
-        </select>
-        <button id="asignarTitularBtn">Asignar Titular</button>
-    </div>
-
-    <div id="mensaje"></div>
 
     <script src="tuspilotos.js">
     </script>
