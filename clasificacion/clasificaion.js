@@ -73,11 +73,11 @@ function ordenarUsuariosPorPuntos() {
 
         listaUsuarios.appendChild(fila);
 
-
+        gp.textContent = 'Total de Grandes Premios disputados: ' +  cont;
     }
 }
 ordenarUsuariosPorPuntos();
 
-gp.textContent = 'Total de Grandes Premios disputados: ' +  cont;
+
     
 
