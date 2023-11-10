@@ -6,6 +6,20 @@ var boton = document.getElementById("iniciarSesion");
 
 
 
+if(!sessionStorage.getItem('primerLogin')){
+var usuarios = {
+    usuario :   [{id:null, usuario: null, nombre : null, apellido: null, contrasena: null, correo: null, puntos:null }
+    ],
+}
+
+sessionStorage.setItem("usuarios", JSON.stringify(usuarios));
+
+sessionStorage.setItem('primerLogin', 'true');  
+
+}
+
+
+
 boton.addEventListener("click", function(){
 
 
@@ -56,12 +70,12 @@ function comprobar(correoText,contrasenaText){
 
             window.location.href = "Inicio/inicio.html";
             error.innerHTML = "Correcto";
-        }else if(correoText == datosUsuario.correo && contrasenaText != datosUsuario.contrasena){
+        }else if(correoText == datosUsuario.usuario[0].correo && contrasenaText != datosUsuario.usuario[0].contrasena){
 
             error.style.color;
             error.innerHTML = "Contraseña incorrecta";
             
-        }else if(correoText != datosUsuario.correo && contrasenaText == datosUsuario.contrasena){
+        }else if(correoText != datosUsuario.usuario[0].correo && contrasenaText == datosUsuario.usuario[0].contrasena){
 
             error.style.color;
             error.innerHTML = "Correo electrónico incorrecto";

@@ -94,7 +94,7 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         passwordValidationMessage.style.color === 'white') {
         // Almacena los datos en sessionStorage
 
-        usuarios = {
+        var usuarios = {
             usuario :   [
                             {id:1, usuario: newUsername, nombre : newName, apellido: newLastName, contrasena: newPassword, correo: newEmail, puntos:0 }
                         ],

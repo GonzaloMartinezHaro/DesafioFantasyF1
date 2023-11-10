@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../inicio/inicio.html"">Inicio</a></li>
+            <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
+            <li><a href="../tuspilotos/tuspilotos.html">Tus Pilotos</a></li>
+            <li><a href="../pilotos/pilotos.html">Pilotos</a></li>
+            <li><a href="../perfil/perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+    
+    <h1>Tus Datos</h1>
+    <form id="datosForm">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" required disabled></input>
+        <br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"></input>
+        <label for="errorNombre" id="errorNombre"></label>
+        <br>
+        <label for="apellidos">Apellido:</label>
+        <input type="text" id="apellido"></input>
+        <label for="errorApellido" id="errorApellido"></label>
+        <br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="text" id="correo"></input>
+        <label for="errorCorreo" id="errorCorreo"></label>
+        <br>
+        <button type="submit" id="cambiarDatos">Aplicar Cambios</button>
+        <br>
+        <br>
+        <label type="text" id="newPassword" required>¿Desea cambiar la contraseña?</label>
+        <br>
+        <label for="newContrasena"></label>
+        <input type="text" id="newContrasena" ></input>
+        <label for="errorContrasena" id="errorContrasena"></label>
+        <br>
+        <button type="submit" id="cambiar">Cambiar Contraseña</button>
+    </form>
+    <div id="error"></div>
+    <label type="text" id="prueba" required></label>
+    
+    <script src="perfil.js"></script>
+</body>
+</html>
