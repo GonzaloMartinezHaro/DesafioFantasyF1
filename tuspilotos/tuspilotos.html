@@ -18,38 +18,35 @@
     <h1>Mis Pilotos</h1>
 
     <div id="piloto1">
-        <h2>Piloto Titular</h2>
-        <img id="fotoPiloto1" src="ruta_imagen_piloto1.jpg" alt="Piloto Titular">
+        
+        <div id="fotoPiloto1"></div>
+        <p id="nombre1"></p>
+        <p>rol: Titular</p>
+        
+
     </div>
 
     <div id="piloto2">
-        <h2>Piloto Suplente</h2>
-        <img id="fotoPilotoSuplente" alt="Piloto Suplente">
+
+        <div id="fotoPiloto2"></div>
+        <p id="nombre2"></p>
+        <p>rol: Suplente</p>
     </div>
     
     
 
     <div>
         <h3>Seleccionar Titular</h3>
-        <select id="titularSelect">
-            <option value="1">Piloto 1</option>
-            <option value="2">Piloto 2</option>
+        <select id="titularSeleccion">
+            <option id="opcion1"></option>
+            <option id="opcion2"></option>
         </select>
         <button id="asignarTitularBtn">Asignar Titular</button>
     </div>
 
-    <div>
-        <h3>Seleccionar Suplente</h3>
-        <select id="suplenteSelect">
-            <option value="1">Piloto 1</option>
-            <option value="2">Piloto 2</option>
-        </select>
-        <button id="asignarSuplenteBtn">Asignar Suplente</button>
-    </div>
-
     <div id="mensaje"></div>
 
-    <script src="app.js">
+    <script src="tuspilotos.js">
     </script>
 </body>
 </html>
