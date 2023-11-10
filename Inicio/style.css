@@ -1,3 +1,8 @@
+:root {
+    --menu-background: #E10600; /* Rojo para el fondo del menú */
+    --color-text: #FFFFFF; /* Blanco para texto principal */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     background: #1a1a1a; /* o el color que prefieras */
@@ -5,14 +10,30 @@ body {
     line-height: 1.6;
     padding: 20px;
 }
-a {
-    color: #d32f2f; /* o el color que prefieras */
+nav {
+    background-color: var(--menu-background);
+    padding: 10px 20px; /* Ajusta el padding según tus necesidades */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra los elementos del menú si es necesario */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: var(--color-text);
     text-decoration: none;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
 }
-a:hover {
-    color: #d32f2f; /* un tono más claro o más oscuro del color del enlace */
-    text-decoration: underline;
-}
+
 
 button {
     background-color: #d32f2f; /* o el color que prefieras */
@@ -40,16 +61,7 @@ button:hover {
     margin: 20px 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
 
 section {
     margin-top: 20px;
@@ -86,26 +98,6 @@ section h2 {
     background-color: darken(var(--color-acento), 10%); /* Oscurece el botón al pasar el ratón por encima */
 }
 
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px; /* Ajusta el margen según el diseño */
-}
-
-nav a {
-    color: var(--color-texto);
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: var(--color-acento);
-}
 
 section {
     margin-top: 20px;

@@ -1,0 +1,85 @@
+/* style.css - Estilos personalizados para la página con temática de Fórmula 1 */
+
+/* Colores y estilos base */
+:root {
+    --color-primary: #FEC400; /* Dorado */
+    --color-secondary: #D8D8D8; /* Gris para fondos y bordes */
+    --color-accent: #E10600; /* Rojo para acentos */
+    --color-background: #1A1A1A; /* Negro para el fondo principal */
+    --color-text: #FFFFFF; /* Blanco para texto principal */
+    --color-subtext: #B3B3B3; /* Gris claro para texto secundario */
+    --color-success: #38761D; /* Verde para elementos de éxito o confirmación */
+    --menu-background: #E10600; /* Rojo para el fondo del menú */
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: var(--menu-background);
+    padding: 10px 20px; /* Ajusta el padding según tus necesidades */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra los elementos del menú si es necesario */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-color: var(--color-secondary);
+}
+
+th, td {
+    border: 1px solid var(--color-secondary);
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+}
+
+td {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+/* Botones */
+.button-primary {
+    background-color: var(--color-accent);
+    color: var(--color-background);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-success {
+    background-color: var(--color-success);
+    color: var(--color-background);
+}
+
+/* Otras clases y estilos según sea necesario */
