@@ -13,8 +13,10 @@
 }
 
 body {
-    background-color: var(--color-background);
-    color: var(--color-text);
+    background-image: url('../fondo.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover; /* Esto hará que la imagen cubra toda la página */
+    background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+    background-attachment: fixed; /* Para que la imagen de fondo sea fija y no se desplace con el scroll */
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 

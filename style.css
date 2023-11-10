@@ -1,7 +1,10 @@
 /* index-styles.css */
 
 body {
-    background-color: #f2f2f7; /* Por ejemplo, un gris claro */
+  background-image: url('../fondo.jpg'); /* Asegúrate de que la ruta sea correcta */
+  background-size: cover; /* Esto hará que la imagen cubra toda la página */
+  background-repeat: no-repeat; /* Para evitar que la imagen se repita */
+  background-attachment: fixed; /* Para que la imagen de fondo sea fija y no se desplace con el scroll */
     color: #ff4136;
 }
 

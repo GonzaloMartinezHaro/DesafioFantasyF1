@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../inicio/inicio.html"">Inicio</a></li>
-            <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
-            <li><a href="../tuspilotos/tuspilotos.html">Tus Pilotos</a></li>
-            <li><a href="../pilotos/pilotos.html">Pilotos</a></li>
-            <li><a href="../perfil/perfil.html">Perfil</a></li>
-        </ul>
-    </nav>
-    
-    <h1>Tus Datos</h1>
+    <div class="container">
+        <div class="row">
+            <nav>
+                <ul>
+                    <li><a href="../Inicio/inicio.html"">Inicio</a></li>
+                        <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
+                        <li><a href="../tuspilotos/tuspilotos.html">Tus Pilotos</a></li>
+                        <li><a href="../pilotos/pilotos.html">Pilotos</a></li>
+                        <li><a href="../perfil/perfil.html">Perfil</a></li>
+                        <li><a href="#">Administración</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="caja">
+
+                <h1>Tus Datos</h1>
     <form id="datosForm">
         <label for="usuario">Usuario:</label>
         <input type="text" id="usuario" required disabled></input>
@@ -46,6 +55,19 @@
     </form>
     <div id="error"></div>
     <label type="text" id="prueba" required></label>
+
+
+
+            </div>
+            
+        </div>
+
+
+
+
+
+    </div>
+
     
     <script src="perfil.js"></script>
 </body>
