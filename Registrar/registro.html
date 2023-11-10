@@ -4,35 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 2em; /* Añadí un pequeño margen al cuerpo para mejorar la apariencia */
+        }
+
+        .validation-message {
+            color: #ff4136;
+            margin-top: 0.5em;
+        }
+    </style>
 </head>
 <body>
-    <h1>Registrarse</h1>
-    <form id="registerForm">
-        <label for="newUsername">Nombre de usuario (4-10 caracteres, solo letras, números y _):</label>
-        <input type="text" id="newUsername" required>
-        <br>
-        <div id="usernameValidationMessage" class="validation-message"></div>
-        <label for="newName">Nombre (2-20 caracteres):</label>
-        <input type="text" id="newName" required>
-        <br>
-        <div id="nameValidationMessage" class="validation-message"></div>
-        <label for="newLastName">Apellido (2-30 caracteres):</label>
-        <input type="text" id="newLastName" required>
-        <br>
-        <div id="lastNameValidationMessage" class="validation-message"></div>
-        <label for="newPassword">Contraseña (6-12 caracteres, *, #, $ o . son especiales):</label>
-        <input type="password" id="newPassword" required>
-        <br>
-        <div id="passwordValidationMessage" class="validation-message"></div>
-        <label for="confirmPassword">Confirmación de Contraseña:</label>
-        <input type="password" id="confirmPassword" required>
-        <br>
-        <div id="confirmPasswordValidationMessage" class="validation-message"></div>
-        <label for="newEmail">Correo electrónico:</label>
-        <input type="email" id="newEmail" required>
-        <br>
-        <button type="submit">Registrarse</button>
-    </form>
+    <div class="container">
+        <h1>Registrarse</h1>
+        <form id="registerForm">
+            <div class="row">
+                <div class="six columns">
+                    <label for="newUsername">Usuario (4-10 caracteres):</label>
+                    <input class="u-full-width" type="text" id="newUsername" required>
+                    <div id="usernameValidationMessage" class="validation-message"></div>
+                </div>
+                <div class="six columns">
+                    <label for="newName">Nombre (2-20 caracteres):</label>
+                    <input class="u-full-width" type="text" id="newName" required>
+                    <div id="nameValidationMessage" class="validation-message"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="newLastName">Apellido (2-30 caracteres):</label>
+                    <input class="u-full-width" type="text" id="newLastName" required>
+                    <div id="lastNameValidationMessage" class="validation-message"></div>
+                </div>
+                <div class="six columns">
+                    <label for="newPassword">Contraseña (6-12 caracteres):</label>
+                    <input class="u-full-width" type="password" id="newPassword" required>
+                    <div id="passwordValidationMessage" class="validation-message"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="confirmPassword">Confirmación de Contraseña:</label>
+                    <input class="u-full-width" type="password" id="confirmPassword" required>
+                    <div id="confirmPasswordValidationMessage" class="validation-message"></div>
+                </div>
+                <div class="six columns">
+                    <label for="newEmail">Correo electrónico:</label>
+                    <input class="u-full-width" type="email" id="newEmail" required>
+                </div>
+            </div>
+            <button class="button-primary" type="submit">Registrarse</button>
+        </form>
+    </div>
     <script src="register.js"></script>
 </body>
 </html>

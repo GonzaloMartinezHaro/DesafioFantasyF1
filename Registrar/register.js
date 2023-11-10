@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const validationMessage = document.getElementById('usernameValidationMessage');
     if (/^[a-zA-Z0-9_]{4,10}$/.test(username)) {
         validationMessage.textContent = 'Nombre de usuario válido';
-        validationMessage.style.color = 'green';
+        validationMessage.style.color = 'white';
     } else {
         validationMessage.textContent = 'El nombre de usuario debe tener entre 4 y 10 caracteres y solo puede contener letras, números y _';
-        validationMessage.style.color = 'red';
+        validationMessage.style.color = 'grey';
     }
 });
 
@@ -29,10 +29,10 @@ document.getElementById('newName').addEventListener('input', function () {
     const validationMessage = document.getElementById('nameValidationMessage');
     if (/^.{2,20}$/.test(name)) {
         validationMessage.textContent = 'Nombre válido';
-        validationMessage.style.color = 'green';
+        validationMessage.style.color = 'white';
     } else {
         validationMessage.textContent = 'El nombre debe tener entre 2 y 20 caracteres';
-        validationMessage.style.color = 'red';
+        validationMessage.style.color = 'grey';
     }
 });
 
@@ -41,10 +41,10 @@ document.getElementById('newLastName').addEventListener('input', function () {
     const validationMessage = document.getElementById('lastNameValidationMessage');
     if (/^.{2,30}$/.test(lastName)) {
         validationMessage.textContent = 'Apellido válido';
-        validationMessage.style.color = 'green';
+        validationMessage.style.color = 'white';
     } else {
         validationMessage.textContent = 'El apellido debe tener entre 2 y 30 caracteres';
-        validationMessage.style.color = 'red';
+        validationMessage.style.color = 'grey';
     }
 });
 
@@ -53,10 +53,10 @@ document.getElementById('newPassword').addEventListener('input', function () {
     const validationMessage = document.getElementById('passwordValidationMessage');
     if (/^[\w*#$.]{6,12}$/.test(password)) {
         validationMessage.textContent = 'Contraseña válida';
-        validationMessage.style.color = 'green';
+        validationMessage.style.color = 'white';
     } else {
         validationMessage.textContent = 'La contraseña debe tener entre 6 y 12 caracteres y solo puede contener letras, números y los caracteres *, #, $ o .';
-        validationMessage.style.color = 'red';
+        validationMessage.style.color = 'grey';
     }
 });
 
@@ -66,10 +66,10 @@ document.getElementById('confirmPassword').addEventListener('input', function ()
     const validationMessage = document.getElementById('confirmPasswordValidationMessage');
     if (confirmPassword === password) {
         validationMessage.textContent = 'Las contraseñas coinciden';
-        validationMessage.style.color = 'green';
+        validationMessage.style.color = 'white';
     } else {
         validationMessage.textContent = 'Las contraseñas no coinciden';
-        validationMessage.style.color = 'red';
+        validationMessage.style.color = 'grey';
     }
 });
 
@@ -88,10 +88,10 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
     const lastNameValidationMessage = document.getElementById('lastNameValidationMessage');
     const passwordValidationMessage = document.getElementById('passwordValidationMessage');
 
-    if (usernameValidationMessage.style.color === 'green' &&
-        nameValidationMessage.style.color === 'green' &&
-        lastNameValidationMessage.style.color === 'green' &&
-        passwordValidationMessage.style.color === 'green') {
+    if (usernameValidationMessage.style.color === 'white' &&
+        nameValidationMessage.style.color === 'white' &&
+        lastNameValidationMessage.style.color === 'white' &&
+        passwordValidationMessage.style.color === 'white') {
         // Almacena los datos en sessionStorage
 
         var usuarios = {

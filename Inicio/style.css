@@ -1,0 +1,140 @@
+:root {
+    --menu-background: #E10600; /* Rojo para el fondo del menú */
+    --color-text: #FFFFFF; /* Blanco para texto principal */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #1a1a1a; /* o el color que prefieras */
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 20px;
+}
+nav {
+    background-color: var(--menu-background);
+    padding: 10px 20px; /* Ajusta el padding según tus necesidades */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Centra los elementos del menú si es necesario */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold; /* Texto en negrita */
+    font-size: 1.2em; /* Aumenta el tamaño del texto */
+}
+
+
+button {
+    background-color: #d32f2f; /* o el color que prefieras */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #a52727; /* un tono más oscuro del color del botón */
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.card {
+    background: #333333; /* o el color que prefieras */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+
+section {
+    margin-top: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+    #imagen {
+        width: 100%;
+        height: 200px; /* Ajusta la altura según tus necesidades */
+        background-color: #ddd; /* Agregué un color de fondo de ejemplo */
+    }
+
+:root {
+    --color-fondo: #121212; /* Asumiendo un negro apagado como fondo */
+    --color-acento: #E63946; /* Un rojo para los botones y elementos destacados */
+    --color-texto: #FFFFFF; /* Blanco para el texto */
+}
+
+.button {
+    background-color: var(--color-acento);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: darken(var(--color-acento), 10%); /* Oscurece el botón al pasar el ratón por encima */
+}
+
+
+section {
+    margin-top: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+#imagen {
+    width: 100%;
+    height: auto; /* Esto permite que la altura se ajuste al tamaño de la imagen */
+    display: flex; /* Utiliza flexbox para centrar la imagen si es más pequeña que el contenedor */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para la imagen */
+#imagen img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.twelve.columns p {
+    display: inline-block; /* Hace que los párrafos se muestren en línea y te permite establecer dimensiones */
+    margin-right: 10px; /* Añade espacio entre los elementos */
+    padding: 5px 10px; /* Añade espacio dentro de los elementos */
+    background-color: #e03636; /* Color de fondo claro para los párrafos */
+    border: 1px solid #e1e1e1; /* Borde sutil */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        width: 100%;
+    }
+    .imagen-circuito {
+        background-size: contain; /* Muestra la imagen completa dentro del contenedor */
+    }
+}

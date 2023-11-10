@@ -1,0 +1,102 @@
+body {
+    background-color: #333; /* Fondo más suave */
+    color: #ff4136;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 50%; /* Ajusta esto según la anchura deseada */
+    background-color: #d32f2f;
+    max-width: 460px; /* Ajusta esto según el ancho máximo deseado */
+    padding: 3rem; /* Espacio dentro del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+    
+}
+
+/* Asegura que todos los elementos del formulario se alineen correctamente */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block; /* Hace que la etiqueta sea un bloque */
+    text-align: left; /* Alinea el texto a la izquierda */
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+    width: 100%; /* Los campos ocuparán el ancho completo del contenedor */
+    padding: 10px;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Borde más sutil */
+    color: #333; /* Texto oscuro para los inputs para mejor legibilidad */
+    background-color: #fff; /* Fondo blanco para los campos de entrada */
+    font-size: 1.5rem;
+    height: 3rem;
+}
+
+button {
+    background-color: #fff; /* Fondo blanco para el botón */
+    color: #ff4136; /* Texto rojo para el botón */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto; /* Permite que el botón sea tan ancho como su contenido */
+    margin-top: 2rem;
+    font-size: 1.2rem; /* Tamaño de fuente más grande para el botón */
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: #f7f7f7; /* Fondo más claro para el estado hover */
+    /* ...resto del estilo button:hover... */
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Más ancho en pantallas pequeñas */
+        padding: 1.5rem;
+    }
+
+    label,
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    button {
+        font-size: 1rem; /* Tamaño de fuente adaptado para pantallas pequeñas */
+    }
+}
+
+
+/* Ajusta los estilos de los mensajes de validación si es necesario */
+.validation-message {
+    height: 20px;
+    color: #fff;
+    font-size: 1.2rem;
+    align-self: flex-start; /* Alinea los mensajes de validación a la izquierda */
+}

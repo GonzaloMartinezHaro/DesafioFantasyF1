@@ -1,0 +1,41 @@
+/* index-styles.css */
+
+body {
+    background-color: #f2f2f7; /* Por ejemplo, un gris claro */
+    color: #ff4136;
+}
+
+a {
+    color: #ff4136;
+}
+
+button, .button {
+    background-color: #ff4136 !important; /* Agrega !important para aumentar la especificidad */
+    color: #fff;
+}
+
+nav {
+    background-color: #ff4136;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto hace que el contenedor tenga el alto total de la ventana */
+  }
+
+  .form-container {
+    background-color: #e0e0e0; /* Cambia esto por el color que prefieras */
+    border-radius: 10px; /* Esto dará los bordes redondeados */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Esto añadirá una sombra ligera */
+    padding: 20px; /* Esto añade espacio dentro del contenedor, alrededor del formulario */
+    max-width: 400px; /* Esto establece un ancho máximo para el contenedor, lo puedes ajustar */
+    margin: auto; /* Esto ayuda a centrar el contenedor si su ancho es menor que el ancho de la pantalla */
+    height: 25vh;
+  }
+  .register-message {
+    margin-top: 20px; /* Ajusta este valor según necesites */
+  }
+  

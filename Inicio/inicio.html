@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../inicio/inicio.html"">Inicio</a></li>
-            <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
-            <li><a href="../tuspilotos/tuspilotos.html">Tus Pilotos</a></li>
-            <li><a href="../pilotos/pilotos.html">Pilotos</a></li>
-            <li><a href="../perfil/perfil.html">Perfil</a></li>
-        </ul>
-    </nav>
-    
-    <section>
-        <h2>Noticias</h2>
-        <p id="carrera"></p>
-        <p id="lugar">Lugar: [lugar de la carrera]</p>
-        <p id="descripcion">Descripción: [breve descripción de la carrera]</p>
-        <div id="imagen"></div>
-        </section>
+    <div class="container">
+        
+        <div class="row">
+            <div class="twelve columns">
+                <nav>
+                    <ul>
+                            <li><a href="../clasificacion/clasificacion.html">Clasificación</a></li>
+                            <li><a href="#">Tus Pilotos</a></li>
+                            <li><a href="#">Pilotos</a></li>
+                            <li><a href="#">Perfil</a></li>
+                            <li><a href="#">Administración</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <h2>Noticias</h2>
+            <p id="carrera"></p>
+            <p id="lugar">Lugar: [lugar de la carrera]</p>
+            <p id="descripcion">Descripción: [breve descripción de la carrera]</p>
+            <div id="imagen"></div>
+            </div>
+            
+        </div>
+        
+    </div>
     
     <script src="inicio.js"></script>
 </body>
