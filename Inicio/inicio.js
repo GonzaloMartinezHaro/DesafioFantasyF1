@@ -60,26 +60,26 @@ var grandesPremios = {
 //en propiedad jugador no deben tener ninguno asignado.
 var pilotos = {
 	piloto : [
-	{id:1,nombre:'Alexsander',apellidos:'Albon',nacionalidad:'Tailandia',propiedadJugador: '', rol:'Libre' ,puntos: 0},
-	{id:2,nombre:'Carlos',apellidos:'Sainz',nacionalidad:'España',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:3,nombre:'Charles',apellidos:'Leclerc',nacionalidad:'Monaco',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:4,nombre:'Esteban',apellidos:'Ocon',nacionalidad:'Frances',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:5,nombre:'Fernando',apellidos:'Alonso',nacionalidad:'España',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:6,nombre:'George',apellidos:'Rusell',nacionalidad:'Gran Bretaña',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:7,nombre:'Guanyu',apellidos:'Zhou',nacionalidad:'China',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:8,nombre:'Kevin',apellidos:'Magnussen',nacionalidad:'Dinamarca',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:9,nombre:'Lance',apellidos:'Stroll',nacionalidad:'Canada',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:10,nombre:'Lando',apellidos:'Norris',nacionalidad:'Gran Bretaña',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:11,nombre:'Lewis',apellidos:'Hamilton',nacionalidad:'Gran Bretaña',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:12,nombre:'Logan',apellidos:'Sargeant',nacionalidad:'Estados Unidos',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:13,nombre:'Max',apellidos:'Verstappen',nacionalidad:'Paises Bajos',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:14,nombre:'Nico',apellidos:'Hulkenberg',nacionalidad:'Alemania',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:15,nombre:'Nyck',apellidos:'de Vries',nacionalidad:'Paises Bajos',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:16,nombre:'Oscar',apellidos:'Piastri',nacionalidad:'Australia',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:17,nombre:'Pierre',apellidos:'Gasly',nacionalidad:'Frances',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:18,nombre:'Sergio',apellidos:'Perez',nacionalidad:'Mexico',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:19,nombre:'Valtteri',apellidos:'Bottas',nacionalidad:'Finlandia',propiedadJugador: '',rol:'Libre' ,puntos: 0},
-    {id:20,nombre:'Yuki',apellidos:'Tsunoda',nacionalidad:'Japon',propiedadJugador: '',rol:'Libre' ,puntos: 0},
+	{id:1,nombre:'Alexsander',apellidos:'Albon',nacionalidad:'Tailandia',propiedadJugador: '-', rol:'Libre' ,puntos: 0 , foto : '../img/alexander-albon.jpg'},
+	{id:2,nombre:'Carlos',apellidos:'Sainz',nacionalidad:'España',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/carlos-sainz.jpg'},
+    {id:3,nombre:'Charles',apellidos:'Leclerc',nacionalidad:'Monaco',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/charles-leclerc.jpg'},
+    {id:4,nombre:'Esteban',apellidos:'Ocon',nacionalidad:'Frances',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/esteban-ocon.jpg'},
+    {id:5,nombre:'Fernando',apellidos:'Alonso',nacionalidad:'España',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/fernando-alonso.jpg'},
+    {id:6,nombre:'George',apellidos:'Rusell',nacionalidad:'Gran Bretaña',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/george-russell.jpg'},
+    {id:7,nombre:'Guanyu',apellidos:'Zhou',nacionalidad:'China',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/guanyu-zhou.jpg'},
+    {id:8,nombre:'Kevin',apellidos:'Magnussen',nacionalidad:'Dinamarca',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/kevin-magnussen.jpg'},
+    {id:9,nombre:'Lance',apellidos:'Stroll',nacionalidad:'Canada',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/lance-stroll.jpg'},
+    {id:10,nombre:'Lando',apellidos:'Norris',nacionalidad:'Gran Bretaña',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/lando-norris.jpg'},
+    {id:11,nombre:'Lewis',apellidos:'Hamilton',nacionalidad:'Gran Bretaña',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/lewis-hamilton.jpg'},
+    {id:12,nombre:'Logan',apellidos:'Sargeant',nacionalidad:'Estados Unidos',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/logan-sargeant.jpg'},
+    {id:13,nombre:'Max',apellidos:'Verstappen',nacionalidad:'Paises Bajos',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/max-verstappen.jpg'},
+    {id:14,nombre:'Nico',apellidos:'Hulkenberg',nacionalidad:'Alemania',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/nico-hulkenberg.jpg'},
+    {id:15,nombre:'Nyck',apellidos:'de Vries',nacionalidad:'Paises Bajos',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/nyck-de-vries.jpg'},
+    {id:16,nombre:'Oscar',apellidos:'Piastri',nacionalidad:'Australia',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/oscar-piastri.jpg'},
+    {id:17,nombre:'Pierre',apellidos:'Gasly',nacionalidad:'Frances',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/pierre-gasly.jpg'},
+    {id:18,nombre:'Sergio',apellidos:'Perez',nacionalidad:'Mexico',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/sergio-perez.jpg'},
+    {id:19,nombre:'Valtteri',apellidos:'Bottas',nacionalidad:'Finlandia',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/valtteri-bottas.jpg'},
+    {id:20,nombre:'Yuki',apellidos:'Tsunoda',nacionalidad:'Japon',propiedadJugador: '-',rol:'Libre' ,puntos: 0 , foto : '../img/yuki-tsunoda.jpg'},
 	]}
 
     var carreras = {
@@ -105,7 +105,7 @@ var pilotos = {
 
        
         var pilotosDisponibles = pilotos.piloto.filter(function(piloto) {
-            return piloto.propiedadJugador === '';
+            return piloto.propiedadJugador === '-';
         });
         var usuariosDisponibles = datosUsuario.usuario.filter(function(usuario) {
             return usuario.id !== 0; // Exclude the first user with id 1
