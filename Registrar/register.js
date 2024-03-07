@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const newLastName = document.getElementById('newLastName').value;
         const newPassword = document.getElementById('newPassword').value;
         const newEmail = document.getElementById('newEmail').value;
-
+//ñ
     
     });
 
